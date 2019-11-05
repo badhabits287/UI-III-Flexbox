@@ -145,6 +145,7 @@ h2,
 h3,
 h4,
 h5 {
+  text-align: center;
   font-family: "Bangers", cursive;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -152,11 +153,9 @@ h5 {
 }
 
 /* My code starts here! */
-
 /* nav bar */
 
 .container {
-  text-align: left;
   background-color: darkslategray;
   position: fixed;
   top: 0;
@@ -178,13 +177,12 @@ div nav a {
   border-radius: 10px;
   width: auto;
   border: 2px solid green;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   margin: 0px 20px 0px 20px;
   background: #656565;
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
   background: -moz-linear-gradient(#656565, #444);
   background: linear-gradient(#656565, #444);
-
   box-shadow: inset 0 0 0 1px #939393;
   color: #fff;
   text-shadow: 0 1px 0 #2f2f2f;
@@ -201,7 +199,6 @@ div nav a:hover {
   );
   background: -moz-linear-gradient(#4c4c4c, #565656);
   background: linear-gradient(#4c4c4c, #565656);
-
   box-shadow: inset 0 0 0 1px #818181;
 }
 
@@ -244,10 +241,59 @@ header nav a:hover {
 }
 
 /* nav bar end */
-/*master */
+
+.services {
+  margin: 10px;
+}
+p {
+  text-align: center;
+  color: rgb(245, 245, 245);
+  padding: 0 20px 10px 20px;
+  margin: 0 20px 10px 20px;
+}
 h4:hover {
-  color:rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
   text-shadow: rgb(0, 0, 0);
+}
+
+.bigbox button {
+  text-shadow: 3px 3px 9px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: auto;
+  border: 2px solid green;
+  padding: 10px;
+  margin: 0px 20px 0px 20px;
+  background: #656565;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+  background: -moz-linear-gradient(#656565, #444);
+  background: linear-gradient(#656565, #444);
+  box-shadow: inset 0 0 0 1px #939393;
+  color: #fff;
+  text-shadow: 0 1px 0 #2f2f2f;
+}
+
+.bigbox button:hover {
+  background: #4c4c4c;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 bottom,
+    from(#4c4c4c),
+    to(#565656)
+  );
+  background: -moz-linear-gradient(#4c4c4c, #565656);
+  background: linear-gradient(#4c4c4c, #565656);
+  box-shadow: inset 0 0 0 1px #818181;
+}
+
+.bigbox button:active {
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+  background: -moz-linear-gradient(#474747, #444);
+  background: linear-gradient(#474747, #444);
+  border: solid 2px #2f2f2f;
+  box-shadow: inset 0 10px 15px 0 #3e3e3e;
 }
 body {
   box-sizing: border-box;
@@ -259,165 +305,40 @@ body {
 }
 
 .master {
-  margin: 10px;
-  overflow: hidden;
-  background-color: darkslategrey;
-  text-align: center;
-  border: 2px solid black;
-}
-.letters {
-  margin-top: 60px;
-  margin-left: 80px;
-  float: left;
-  font-size: 80px;
-  padding-bottom: 40px;
-  color: grey;
-  outline-color: red;
-}
-
-.letters button {
-  text-shadow: 3px 3px 9px;
-  text-decoration: none;
-  border-radius: 10px;
-  width: auto;
-  border: 2px solid green;
-  padding: 10px 10px 10px 10px;
-  margin: 0px 20px 0px 20px;
-  background: #656565;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
-  background: -moz-linear-gradient(#656565, #444);
-  background: linear-gradient(#656565, #444);
-
-  box-shadow: inset 0 0 0 1px #939393;
-  color: #fff;
-  text-shadow: 0 1px 0 #2f2f2f;
-}
-
-.letters button:hover {
-  background: #4c4c4c;
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    0 bottom,
-    from(#4c4c4c),
-    to(#565656)
-  );
-  background: -moz-linear-gradient(#4c4c4c, #565656);
-  background: linear-gradient(#4c4c4c, #565656);
-
-  box-shadow: inset 0 0 0 1px #818181;
-}
-
-.letters button:active {
-  background: #474747;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
-  background: -moz-linear-gradient(#474747, #444);
-  background: linear-gradient(#474747, #444);
-  border: solid 2px #2f2f2f;
-  box-shadow: inset 0 10px 15px 0 #3e3e3e;
-}
-
-section img {
-
-  float: right;
-  height: auto;
-  width: auto;
-  margin: 30px;
-  padding: 10px 30px 10px 10px;
-  
-}
-
-
-/* master end */
-/* main */
-
-main {
+  display: flex;
+  flex-direction: row;
   border: 2px solid black;
   background-color: darkslategrey;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
   margin: 10px;
   overflow: auto;
 }
-
-.Features {
+.bigbox {
   text-align: center;
-  float: left;
   height: fit-content;
-  width: 400px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
+  background-color: darkslategray;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(0, 0, 0);
 }
 
-.About {
-  text-align: center;
-  float: right;
-  height: fit-content;
-  width: 400px;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
+.bigbox > * {
+  flex: 1 1 200px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px;
 }
-.middle-img {
-  width: 100%;
-  height: fit-content;
-  margin: auto;
-  padding: 10px 10px 10px 10px;
-}
-
-.Services {
-  text-align: center;
-  display: inline-block;
-  height: 200px;
-  width: 30%;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
-}
-
-.Product {
-  text-align: center;
-  display: inline-block;
-  height: 200px;
-  width: 30%;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
-}
-
-.Vision {
-  text-align: center;
-  display: inline-block;
-  height: 200px;
-  width: 30%;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
-}
-/* main end */
-/*Footer*/
-
 footer {
-  
+  display: flex;
+  flex-direction: column;
   background-color: darkslategrey;
   border: 2px solid black;
   text-align: center;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  
-
+  margin: 10px;
+  padding: 10px;
 }
-
-footer section {
-  margin: 10px 10px 10px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid white;
-}
-
-footer p {
-  margin: 20px 0;
-}
-
 footer div {
   text-align: center;
   margin: 10px 10px 10px 10px;
