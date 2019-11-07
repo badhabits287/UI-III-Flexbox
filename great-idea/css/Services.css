@@ -92,19 +92,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
+
 body {
   line-height: 1;
 }
@@ -145,47 +133,44 @@ h2,
 h3,
 h4,
 h5 {
+  font-size: 20px;
   text-align: center;
-  font-family: "Bangers", cursive;
+  font-family:Georgia, 'Times New Roman', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
   color: grey;
+  border: 1px solid green
 }
 
 /* My code starts here! */
 /* nav bar */
 
 .container {
+  height: 60px;
+  width: 1000px;
   background-color: darkslategray;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-  overflow: hidden;
-  width: 60%;
-  border: 2px solid black;
+  top: 0px;
+  border: 1px solid black;
   border-radius: 10px;
-  padding: 10px 10px 50px 10px;
-  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 div nav a {
-  display: inline-block;
   text-shadow: 3px 3px 9px;
   text-decoration: none;
-  border-radius: 10px;
-  width: auto;
-  border: 2px solid green;
-  padding: 10px;
-  margin: 0px 20px 0px 20px;
   background: #656565;
   background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
   background: -moz-linear-gradient(#656565, #444);
   background: linear-gradient(#656565, #444);
   box-shadow: inset 0 0 0 1px #939393;
-  color: #fff;
+  color: #fff; 
+  border-radius: 10px;
+  border: 2px solid green;
   text-shadow: 0 1px 0 #2f2f2f;
+  padding: 10px;
 }
 
 div nav a:hover {
@@ -215,16 +200,10 @@ header nav a:hover {
   color: red;
 }
 .logo {
-  width: auto;
+ 
   border: 2px solid green;
-  padding: 5px 5px 5px 5px;
-  margin: 0px 10px 0px 0px;
-  position: absolute;
-  top: 50%;
-  left: 88%;
-  transform: translate(-50%, -50%);
   border-radius: 10px;
-  overflow: hidden;
+  
   animation: logobgch 3s infinite;
 }
 
@@ -246,72 +225,32 @@ header nav a:hover {
   margin: 10px;
 }
 p {
+  font-family:Georgia, 'Times New Roman', sans-serif;
   text-align: center;
   color: rgb(245, 245, 245);
-  padding: 0 20px 10px 20px;
-  margin: 0 20px 10px 20px;
 }
 h4:hover {
   color: rgb(255, 0, 0);
   text-shadow: rgb(0, 0, 0);
 }
 
-.bigbox button {
-  text-shadow: 3px 3px 9px;
-  text-decoration: none;
-  border-radius: 10px;
-  width: auto;
-  border: 2px solid green;
-  padding: 10px;
-  margin: 0px 20px 0px 20px;
-  background: #656565;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
-  background: -moz-linear-gradient(#656565, #444);
-  background: linear-gradient(#656565, #444);
-  box-shadow: inset 0 0 0 1px #939393;
-  color: #fff;
-  text-shadow: 0 1px 0 #2f2f2f;
-}
-
-.bigbox button:hover {
-  background: #4c4c4c;
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    0 bottom,
-    from(#4c4c4c),
-    to(#565656)
-  );
-  background: -moz-linear-gradient(#4c4c4c, #565656);
-  background: linear-gradient(#4c4c4c, #565656);
-  box-shadow: inset 0 0 0 1px #818181;
-}
-
-.bigbox button:active {
-  background: #474747;
-  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
-  background: -moz-linear-gradient(#474747, #444);
-  background: linear-gradient(#474747, #444);
-  border: solid 2px #2f2f2f;
-  box-shadow: inset 0 10px 15px 0 #3e3e3e;
-}
 body {
-  box-sizing: border-box;
-  width: 60%;
+  
+  width: 1000px;
   padding-top: 60px;
   margin: auto;
-  border: 2px solid black;
+  border: 1px solid black;
   height: max-content;
+  
 }
 
 .master {
-  display: flex;
-  flex-direction: row;
   border: 2px solid black;
   background-color: darkslategrey;
   padding: 10px;
   margin: 10px;
-  overflow: auto;
+  text-align: center;
+  justify-content: center;
 }
 .bigbox {
   text-align: center;
@@ -331,7 +270,7 @@ body {
   margin: 20px;
 }
 footer {
-  display: flex;
+  display: flexbox;
   flex-direction: column;
   background-color: darkslategrey;
   border: 2px solid black;
