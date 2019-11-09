@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+  line-height: 1;
+  width: 1000px;
+  padding-top: 60px;
+  margin: auto;
+  border: 1px solid black;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  
+  border-radius: 10px;
+  
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 20px;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: grey;
+  border: 1px solid green
+}
+
+/* My code starts here! */
+/* nav bar */
+
+.container {
+  height: 60px;
+  width: 1000px;
+  background-color: darkslategray;
+  position: fixed;
+  top: 0px;
+  border: 1px solid black;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div nav a {
+  text-shadow: 3px 3px 9px;
+  text-decoration: none;
+  background: #656565;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#656565), to(#444));
+  background: -moz-linear-gradient(#656565, #444);
+  background: linear-gradient(#656565, #444);
+  box-shadow: inset 0 0 0 1px #939393;
+  color: #fff; 
+  
+  border: 2px solid green;
+  text-shadow: 0 1px 0 #2f2f2f;
+  padding: 10px;
+}
+
+div nav a:hover {
+  background: #4c4c4c;
+  background: -webkit-gradient(
+    linear,
+    0 0,
+    0 bottom,
+    from(#4c4c4c),
+    to(#565656)
+  );
+  background: -moz-linear-gradient(#4c4c4c, #565656);
+  background: linear-gradient(#4c4c4c, #565656);
+  box-shadow: inset 0 0 0 1px #818181;
+}
+
+div nav a:active {
+  background: #474747;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#474747), to(#444));
+  background: -moz-linear-gradient(#474747, #444);
+  background: linear-gradient(#474747, #444);
+  border: solid 2px #2f2f2f;
+  box-shadow: inset 0 10px 15px 0 #3e3e3e;
+}
+
+header nav a:hover {
+  color: red;
+}
+.logo {
+ 
+  border: 2px solid green;
+  
+  
+  animation: logobgch 3s infinite;
+}
+
+@keyframes logobgch {
+  0% {
+    background-color: rgb(243, 208, 9);
+  }
+  50% {
+    background-color: rgb(2, 102, 2);
+  }
+  100% {
+    background-color: rgb(252, 15, 2);
+  }
+}
+
+/* nav bar end */
+
+.services {
+  margin: 10px;
+}
+p {
+  font-family:Georgia, 'Times New Roman', sans-serif;
+  text-align: center;
+  color: rgb(245, 245, 245);
+}
+h4:hover {
+  color: rgb(255, 0, 0);
+  text-shadow: rgb(0, 0, 0);
+}
+
+body {
+  
+  width: 1000px;
+  padding-top: 60px;
+  margin: auto;
+  border: 1px solid black;
+  height: max-content;
+  
+}
+
+.master {
+  border: 2px solid black;
+  background-color: darkslategrey;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.bigbox {
+  text-align: center;
+  height: fit-content;
+  background-color: darkslategray;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.bigbox > * {
+  flex: 1 1 200px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px;
+}
+footer {
+  display: flexbox;
+  flex-direction: column;
+  background-color: darkslategrey;
+  border: 2px solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+footer div {
+  text-align: center;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid white;
+}
