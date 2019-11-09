@@ -95,6 +95,14 @@ video {
 
 body {
   line-height: 1;
+  width: 1000px;
+  padding-top: 60px;
+  margin: auto;
+  border: 1px solid black;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 ol,
 ul {
